@@ -1,0 +1,9 @@
+.DS_Store
+Local
+./*.html
+./*.pdf
+*.zip
+assets/
+HorizonTechnicalDoc.html
+HorizonTechnicalDoc.pdf
+HorizonTechnicalDoc_.md
