@@ -16,6 +16,32 @@ In VSCode install the extension [Markdown Preview Enhanced](https://marketplace.
 
 The docs on the extension are [here](https://shd101wyy.github.io/markdown-preview-enhanced/#/).
 
+#### Fast Preview When Editing
+
+Editing the entire doc can be very slow (if you have the preview open). At the very top of the doc is the line:
+
+```
+<!--focusSection: -->
+```
+
+You can put the name of a top-level section there, such as:
+
+```
+<!--focusSection: Instances -->
+```
+
+and the preview editor will only render that part of the doc! Please don't submit a PR with any changes to that line.
+
+#### Checkings Links
+
+When editing, it's easy to accidentally delete a link or make a mistake in the format. You can modify the second line of the doc to be
+
+```
+<!--checkLinks: true -->
+```
+
+and instead of rendering the doc, it will render an overview of any broken links. Please don't submit a PR with any changes to that line.
+
 ### Generating the PDF
 
 When you want to "generate the PDF" make sure the preview tab is open. Click this [≣] icon in the bottom right (you may have to hover there for it to be visible) and then click:
